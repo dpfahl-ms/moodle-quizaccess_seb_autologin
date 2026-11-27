@@ -67,7 +67,7 @@ class quizaccess_seb_autologin extends access_rule_base {
         $mform->addElement('header', 'seb_autologinheader', get_string('pluginname', 'quizaccess_seb_autologin'));
         $mform->addElement('selectyesno', 'sebautologinenabled', get_string('enableseb_autologin', 'quizaccess_seb_autologin'));
         $mform->setType('sebautologinenabled', PARAM_INT);
-        $mform->disabledif ('sebautologinenabled', 'seb_requiresafeexambrowser', 'in', [0, 2, 4]);
+        $mform->disabledif ('sebautologinenabled', 'seb_requiresafeexambrowser', 'in', [0, 4]);
 
     }
 
